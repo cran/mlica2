@@ -1,0 +1,17 @@
+61adb9f2ff6395010ed83db3aec676b4 *DESCRIPTION
+df390c53434517b304ac5db487184641 *NAMESPACE
+ab641ac0d5e39748fd602cebb1c0be89 *R/CheckStability.R
+393d6dee480688b0e687b5afdd495ca8 *R/PriorNormPCA.R
+a57bc3fe7204e5866dda45a2a86a5847 *R/SortModes.r
+cf6072ab2ac81ff57f556bb8d20b5b76 *R/mlica.R
+66ad5030bd8eb7c9456c37c1b07e1275 *R/mlicaMAIN.R
+c1b143193e3c8c0198fba232b85938d4 *R/proposeNCP.R
+76032666892bf39e9eb7fb5fbfaa7a20 *data/simMAdata.RData
+5dd272d884ce1d8d7b46db5ad675c615 *man/CheckStability.Rd
+5c9da843681f8be1ed1bbcfa97aa4311 *man/PriorNormPCA.Rd
+39a592efeb0ec9869ac2a24341c7b919 *man/SortModes.Rd
+b17b7a901769fbad22becf22c5d3a7a0 *man/mlica.rd
+48dda21ad1594c150c4830da0f913917 *man/mlica2-package.Rd
+e6a88c276f7fb40f309796038c49a1e7 *man/mlicaMAIN.Rd
+6907c9d703fbc2e5499c5aa17095522e *man/proposeNCP.Rd
+10f04f72f718ae747e6f389586e6a388 *man/simMAdata.Rd
