@@ -8,7 +8,7 @@ function(X){ # START FUNCTION
  }
  print("Performing SVD");
  # SVD
- svd.o <- svd(X,LINPACK=TRUE);
+ svd.o <- svd(X,LINPACK=FALSE);
  Dx <- diag(svd.o$d*svd.o$d)/ntp;
  Ex <- svd.o$v ;
  barplot(Dx,main="Singular values");

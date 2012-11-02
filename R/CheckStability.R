@@ -78,7 +78,7 @@ function(a.best.l, corr.th=0.7){
  }
 
  STS <- t(consS.m) %*% consS.m;
- solve(STS) -> STSinv ;
+ solve(STS, LINPACK=FALSE) -> STSinv ;
  STX <- t(consS.m) %*% X ;
  consA.m <- STSinv %*% STX ;
  

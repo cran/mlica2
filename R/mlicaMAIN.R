@@ -28,10 +28,10 @@ function(prNCP, tol=0.0001, maxit=300, mu=1){# default values
    print(c("Entering iteration loop ",icount));
    # whiten y=B.old x first
    Cy <- B.old %*% t(B.old);
-   svds <- eigen(Cy,symmetric=TRUE) ;
+   svds <- eigen(Cy,symmetric=TRUE,EISPACK=FALSE) ;
    D <- diag(svds$values);
    E <- svds$vectors;
-   Dinv <- solve(D);
+   Dinv <- solve(D, LINPACK=FALSE);
    # whitening matrix:
    V <- E %*% sqrt(Dinv) %*% t(E);
 
@@ -83,10 +83,10 @@ function(prNCP, tol=0.0001, maxit=300, mu=1){# default values
   # find estimated source components
   # whiten y=Bx first (actually we only do PCA)(i.e variance is not scaled)
    Cy <- B %*% t(B);
-   svds <- eigen(Cy,symmetric=TRUE) ;
+   svds <- eigen(Cy,symmetric=TRUE,EISPACK=FALSE) ;
    D <- diag(svds$values);
    E <- svds$vectors;
-   Dinv <- solve(D);
+   Dinv <- solve(D, LINPACK=FALSE);
    # whitening matrix (variance scaling here)
    V <- E %*% sqrt(Dinv) %*% t(E);
 
